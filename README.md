@@ -17,7 +17,7 @@ _Internet access is required to run the program. Otherwise there is no other cod
 
 ## Known Bugs
 
-_There are currently no known bugs. Program should be responsive to all view ports._
+_There are currently no known bugs. Program should be responsive to all viewports._
 
 ## Support and contact details
 

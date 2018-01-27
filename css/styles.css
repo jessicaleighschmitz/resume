@@ -13,7 +13,7 @@ body {
 }
 img {
   border-radius: 100%;
-  border: solid 5px #F2A0CC;
+  border: solid 3px #F2A0CC;
   display: block;
   margin: 0 auto;
 }
@@ -22,6 +22,7 @@ h1 {
   color: #F2A0CC;
   text-align: center;
   padding-bottom: 10px;
+  text-shadow: 1px 1px 2px white;
 }
 .nav_bar{
   text-align: right;
@@ -36,17 +37,21 @@ h1 {
   font-size: 1.5em;
   text-decoration: none;
   font-weight: bold;
+  text-shadow: 1px 1px 2px #FFF;
 }
 .bio {
   color:#FFF;
   text-align: center;
   margin: 30px 15px 10px;
+  font-size: 2.5em;
+  transition: all .2s ease-in-out;
 }
 h2 {
   color:#F2A0CC;
   text-align: center;
   margin: 60px 15px 10px;
   font-size: 2.5em;
+  transition: all .2s ease-in-out;
 }
 .about_me {
   border-bottom: solid 40px #F2A0CC;
@@ -63,25 +68,28 @@ h2 {
 .container {
   display: flex;
   justify-content: center;
-  /*border-bottom: solid 40px #F2A0CC;*/
+  /*flex-wrap: wrap;*/
 }
 h3 {
   text-align: center;
   color: #8CE4F3;
   text-decoration: underline;
+  transition: all .2s ease-in-out;
 }
 .works {
   margin-top: 30px;
+  width: 350px;
 }
 .works ul {
   margin-bottom: 40px;
   margin-right: 25px;
   margin-left: 25px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .works ul li{
   color: #728FB1;
   font-size: 1.3em;
+  margin-bottom: 10px;
 }
 .works ul li  a{
   text-decoration: none;
@@ -133,4 +141,22 @@ p a {
 }
 p a:hover {
   color: #F5DA47;
+}
+.bio:hover {
+  transform: scale(1.2);
+}
+h2:hover {
+  transform: scale(1.2);
+}
+h3:hover {
+  transform: scale(1.2);
+}
+@media (max-width: 700px) {
+  .main-content p {
+    margin: 10px 0 70px;
+    font-size: 1em;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
 }
